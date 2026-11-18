@@ -1,7 +1,8 @@
 import React from "react";
 
-// One blog post. Receives: title, date, preview
-function Article({ title, date, preview }) {
+// One blog post. Receives: title, date, preview.
+// If no date is passed, a default date is shown instead.
+function Article({ title, date = "January 1, 1970", preview }) {
   return (
     <article>
       <h3>{title}</h3>
